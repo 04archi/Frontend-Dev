@@ -1,0 +1,83 @@
+Ques 1. Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+
+Ans 1. Frontend: Part users see (UI).
+Example: Buttons, forms, and layouts on Amazon’s website (HTML, CSS, JS).
+Backend: Logic and database handling.
+Example: Order processing and payment on Amazon (Node.js, Python, Java).
+Full Stack: Works on both frontend & backend.
+Example: A developer building both the user interface and server logic.
+
+Ques 2. Create a simple diagram showing how the client-server model works in web architecture.
+
+Ans 2. 
+Client (Browser)
+     ↓ Request (HTTP)
+ Server (Web Server)
+     ↓ Fetches data from
+ Database
+     ↑ Sends Response (HTML/CSS/JS)
+Client displays Webpage
+
+Ques 3. Describe how a browser requests and displays a web page from a web server.
+
+Ans. 1.User enters URL.
+2.Browser sends HTTP request to server.
+3.Server sends HTML, CSS, JS files.
+4.Browser renders them into a web page.
+
+Ques 4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+
+Ans. 
+Tool	                     Purpose
+VS Code	                    Code editor
+Browser (Chrome/Edge)	    To test web pages
+Node.js	                    Run JavaScript outside browser
+Git & GitHub	            Version control
+Live Server Extension	    Auto-refresh webpage preview
+
+Ques 5. Explain what a web server is and give examples of commonly used servers. 
+
+Ans.A web server stores, processes, and delivers web pages to clients.
+Examples: Apache, Nginx, Microsoft IIS, Node.js Express.
+
+Ques 6. Define the roles of a frontend developer, backend developer, and database administrator in a project. 
+
+Ans. Frontend Developer: Designs UI/UX and builds client-side code.
+Backend Developer: Manages server logic, APIs, and data processing.
+Database Administrator (DBA): Handles data storage, backups, and optimization.
+
+Ques 7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup. 
+
+Ans. Steps:
+Install VS Code → Install extensions: Live Server, HTML CSS Support, Prettier.
+Open folder → Create index.html, style.css, script.js.
+(Take screenshot of VS Code showing files & Live Server running.)
+
+Ques 8. Explain the difference between static and dynamic websites. Provide an example of each. 
+
+Ans. Static: Fixed content, same for all users.
+Example: Portfolio website.
+Dynamic: Content changes with user interaction or database.
+Example: Facebook, Amazon.
+
+Ques 9. Research and list five web browsers. Explain how rendering engines differ between them. 
+
+Ans. Browser	         Rendering Engine
+Google Chrome	         Blink
+Mozilla Firefox	         Gecko
+Safari	                 WebKit
+Microsoft Edge	         Blink
+Opera	                 Blink
+
+Rendering engines interpret HTML/CSS/JS differently → affects speed, design, and compatibility.
+
+Ques 10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+
+Ans.
+[Client/Browser]
+        ↓ HTTP Request
+[Web Server] ↔ [APIs]
+        ↓
+   [Database]
+        ↑
+   Response sent back to Client
