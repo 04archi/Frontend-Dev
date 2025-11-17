@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Step Goal Tracker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(#4CAF50 var(--p), #ddd 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Step Goal Tracker</h2>
+
+    <label>Enter Steps:</label>
+    <input type="number" id="steps" placeholder="Enter steps"><br><br>
+
+    <button onclick="checkSteps()">Check Progress</button>
+
+    <h3 id="message"></h3>
+
+    <!-- Circular Progress -->
+    <div class="circle" id="progressCircle" style="--p: 0deg">0%</div>
+
+    <script>
+        function checkSteps() {
+            let steps = document.getElementById("steps").value;
+
+            // ternary operator
+            let message = steps >= 10000 ? "Goal Achieved 🎉" : "Keep Going 💪";
+
+            document.getElementById("message").innerHTML = message;
+
+            // calculate progress %
+            let percent = Math.min((steps / 10000) * 100, 100);
+            let degree = (percent / 100) * 360;
+
+            document.getElementById("progressCircle").style.setProperty("--p", degree + "deg");
+            document.getElementById("progressCircle").innerHTML = Math.floor(percent) + "%";
+        }
+    </script>
+
+</body>
+</html>

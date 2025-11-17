@@ -1,0 +1,29 @@
+//single item bill calculator with discount for grocery market
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Bill Calculator</title>
+</head>
+<body>
+    <h2>Grocery Bill Calculator</h2>
+    <label>Enter Price:</label>
+    <input type="number" id="price" placeholder="Price"><br><br>
+    <label>Enter Quantity:</label>
+    <input type="number" id="quantity" placeholder="Quantity"><br><br>
+    <button onclick="calculateBill()">Calculate Bill</button>
+    <h3 id="result"></h3>
+    <script>
+        function calculateBill() {
+            let price = document.getElementById("price").value;
+            let quantity = document.getElementById("quantity").value;
+            let total = price * quantity;
+            if (total > 1000) {
+                total = total - (total * 0.10);
+            }
+            document.getElementById("result").innerHTML = "Final Amount: ₹" + total;
+        }
+    </script>
+
+</body>
+</html>
